@@ -35,9 +35,17 @@ const charactersList = async (page = 1) => {
 window.addEventListener("hashchange", () => {
   // Si el enlace lleva a /#/3, id toma el valor 3 que es el ID del personaje
   const id = location.hash.slice(1).toLocaleLowerCase().split("/")[1] || "/";
-  console.log(id);
+  console.log(typeof id);
   localStorage.setItem("charID", id);
   //   window.location.replace("/character.html");
 });
 
+function saveData() {
+  // orderByTaskAsc();
+  localStorage.setItem("tasksPrueba", "Hola Mundo");
+  // btnSaveTask.disabled = true;
+  // inputText.focus();
+}
+
 charactersList();
+saveData();
