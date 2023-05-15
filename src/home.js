@@ -25,7 +25,7 @@ const charactersList = async (page = 1) => {
     <p>${character.species}</p>
     <p class="${character.status.toLowerCase()}"></p>
     </div>
-    <a href="./#/${character.id}">Ver detalle</a>
+    <a href="/#/${character.id}">Ver detalle</a>
     `;
     container.appendChild(article);
   });
