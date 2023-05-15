@@ -40,12 +40,12 @@ window.addEventListener("hashchange", () => {
   //   window.location.replace("/character.html");
 });
 
-function saveData() {
+//function saveData() {
   // orderByTaskAsc();
-  localStorage.setItem("tasksPrueba", "Hola Mundo");
+  //localStorage.setItem("tasksPrueba", "Hola Mundo");
   // btnSaveTask.disabled = true;
   // inputText.focus();
-}
+//}
 
 charactersList();
-saveData();
+//saveData();
